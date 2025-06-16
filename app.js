@@ -81,7 +81,11 @@ app.get(
     const user = await prisma.user.findUniqueOrThrow({
       where: { id },
       include: {
-        userPreference: true,
+        userPreference: {
+          select: {
+            receiveEmail: true,
+          },
+        },
       },
     });
     res.send(user);
