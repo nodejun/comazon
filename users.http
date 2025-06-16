@@ -18,10 +18,13 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "email": "yjkim@example.com", 
+  "email": "yjkim2@example.com", 
   "firstName": "유진",
   "lastName": "김",
-  "address": "충청북도 청주시 북문로 210번길 5"
+  "address": "충청북도 청주시 북문로 210번길 5",
+  "userPreference": {
+    "receiveEmail": true
+  }
 }
 
 ###
